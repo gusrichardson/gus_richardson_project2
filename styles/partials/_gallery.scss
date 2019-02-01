@@ -1,0 +1,12 @@
+.gallery {
+    padding: 100px;
+    background: $secondary;
+}
+
+.gallery_img_box {
+    width: 31%;
+    img {
+        display: block;
+        width: 100%;
+    }
+}

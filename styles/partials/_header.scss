@@ -1,0 +1,80 @@
+header {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(../images/home_banner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    @include logofont;
+}
+
+.header_nav_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        width: 50%;
+        border: 1px solid blue;
+        h1 {
+            color: $boxshadow;
+        }
+    }
+    .header_nav_container {
+        width: 50%;
+        border: 1px solid pink;
+    }
+}
+
+.header_nav {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-around;
+    li {
+        list-style: none;
+        text-decoration: none;
+        a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.sunglasses_img_container {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: -8%;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.welcome_container {
+    width: 100%;
+    height: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    .welcome_text {
+        border: 1px solid pink;
+        width: 60%;
+        text-align: center;
+        align-self: flex-end;
+        position: absolute;
+        h1 {
+            font-size: 3rem;
+            padding: 0;
+            margin: 0;
+            border: 1px solid red;
+        }
+    }
+}
+

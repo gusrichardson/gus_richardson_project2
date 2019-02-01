@@ -1,0 +1,116 @@
+.grid_section {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 0px;
+    background: $secondary;
+}
+
+.grid_item {
+    // width: 50%;
+    // height: auto;
+    border: 1px solid red;
+    // position: relative;
+}
+
+.grid_text_container {
+    padding: 30px 40px;
+}
+
+.grid_img_container {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+// *** CSS GRID
+
+.css_grid {
+    height: 200vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns:10% 10% 10% 10% 5% 5% 5% 5% 10% 10% 10% 10%;
+    grid-template-rows: 2.5% 2.5% 5% 5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 5% 5% 2.5% 2.5% 25% 25%;
+}
+
+.overlap_background_colour {
+    grid-row: 1;
+    grid-column: 1/ span 12;
+    background: $primary;
+}
+
+.grid_background_colour {
+    grid-row: 2/ span 14;
+    grid-column: 1/ span 12;
+    background-color: $secondary;
+    z-index: -1;
+}
+
+.item_one {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 7;
+    // border: 4px solid green;
+       .css_grid_img_container {
+           width: 100%;
+           height: auto;
+           box-shadow: 10px 10px $boxshadow;
+           img {
+               width: 100%;
+               height: 100%;
+               display: block;
+           }
+       }
+}
+
+.item_four {
+    grid-column: 8 / span 5;
+    grid-row: 10 / span 7;
+    // border: 4px solid green;
+       .css_grid_img_container {
+           width: 100%;
+           height: auto;
+           box-shadow: -10px 10px $boxshadow;
+           img {
+               max-width: 100%;
+               height: 100%;
+               display: block;
+           }
+       }
+}
+
+.item_two {
+    grid-column: 7/ span 6;
+    grid-row: 2/ span 7;
+    height: 100%;
+    // border: 4px solid pink;
+    .css_grid_text_container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.item_three {
+    grid-column: 1/ span 6;
+    grid-row: 9/ span 7;
+    height: 100%;
+    // border: 4px solid pink;
+    .css_grid_text_container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.grid_footer_banner {
+    grid-column: 1/ span 12;
+    grid-row: 16/ span 3; 
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    img {
+       max-width: 100%;
+       height: 100%;
+       display: block;
+    }
+}

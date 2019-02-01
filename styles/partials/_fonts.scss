@@ -1,0 +1,14 @@
+$beachstay:'Playfair Display SC', serif;
+
+@mixin logofont {
+    font-family: 'Playfair Display SC', serif;
+    font-style: italic;
+    color: $btnblue;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
