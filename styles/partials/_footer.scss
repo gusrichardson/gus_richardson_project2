@@ -1,6 +1,26 @@
-.footer_banner {
-    width: 100vw;
-    height: 75vh;
-    background-image: url(../images/footer_banner.jpg);
-    background-size: cover;
+footer {
+    padding-bottom: 0;
+}
+
+.footer_offer {
+    padding: 100px 180px;
+    text-align: center;
+    h2 {
+        font-family: 'Lato', sans-serif;
+        color: $spruce;
+        letter-spacing: 3.8px;
+    }
+}
+
+
+.copyright_bar {
+    text-align: center;
+    background: $black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    p {
+        margin-bottom: 0;
+        padding: 10px 0;
+        color: white;
+    }
 }

@@ -11,4 +11,21 @@ p {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 2px;
+    color: $black;
+}
+
+input[type="button"] {
+    @include logofont;
+    background-color: $btnblue;
+    color: white;
+    font-weight: 400;
+    padding: 8px 15px 10px;
+    border: none;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+input[type="button"]:hover {
+    background-color: $boxshadow;
+    color: $primary;
 }
