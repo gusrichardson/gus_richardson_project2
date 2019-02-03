@@ -659,3 +659,11 @@ form {
 #post_comment_button {
   width: 100%;
   margin: 20px 0 100px 0; }
+
+.test {
+  font-size: 80px; }
+
+.test_header {
+  background-image: url(../images/contact_banner.jpg);
+  width: 100vw;
+  height: 60vh; }
