@@ -1,24 +1,49 @@
+.visually_hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .comments_section_wrapper {
    display: grid;
    width: 100vw;
    height: 100vh;
-   border: 20px solid green;
+//    border: 10px solid cornflowerblue;
    position: relative;
    top: 140vh;
+//    padding-left: 60px;
+   input[type="text"], input[type="email"] {
+       border: none;
+       border-bottom: 2px solid $boxshadow;
+       width: calc(50% - 25px);
+   }
+   input:nth-of-type(2) {
+    margin-left: 40px;
+    }
 }
 
 .comments_container {
+    padding-left: 60px;
     display: flex;
     width: 60%;
     flex-direction: column;
-    border: 1px solid blue;
+    // border: 1px solid blue;
 }
 
 .comment_box {
-    border: 2px solid pink;
+    // border: 2px solid pink;
     width: 100%;
     display: flex;
     .comment_img {
+        // border: 1px solid purple;
+        padding-top: 26px;
         width: 10%;
         img {
             width: 100%;
@@ -28,5 +53,24 @@
     }
     .comment_text {
         width: 90%;
+        padding-left: 20px;
     }
+}
+
+textarea {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid $boxshadow;
+    padding-top: 20px;
+    padding-left: 20px;
+    color:grey;
+}
+
+form {
+    margin-top: 30px;
+}
+
+#post_comment_button {
+    width: 100%;
+    margin: 20px 0 100px 0;
 }
