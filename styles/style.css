@@ -481,7 +481,7 @@ header.blog {
   display: -ms-grid;
   display: grid;
   position: absolute;
-  top: -240px;
+  top: -300px;
   -ms-grid-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
@@ -495,24 +495,35 @@ header.blog {
 
 .blog_img_container {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/ span 5;
+  -ms-grid-column-span: 6;
+  grid-column: 1/ span 6;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  grid-row: 2/ span 3; }
+  -ms-grid-row-span: 4;
+  grid-row: 2/ span 4;
+  -webkit-box-shadow: 10px 10px #50e3c2;
+  box-shadow: 10px 10px #50e3c2; }
   .blog_img_container img {
     width: 100%;
-    height: auto;
-    display: block; }
+    height: 100%;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 80% 0%;
+    object-position: 80% 0%; }
 
 .blog_article_container {
   -ms-grid-row: 6;
   -ms-grid-row-span: 5;
   grid-row: 6/ span 5;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1/ span 7;
-  border: 2px solid pink; }
+  -ms-grid-column-span: 6;
+  grid-column: 1/ span 6;
+  padding-right: 30px;
+  padding-left: 30px;
+  -webkit-box-shadow: 10px 10px #50e3c2;
+  box-shadow: 10px 10px #50e3c2;
+  border-right: 1px solid #50e3c2;
+  border-top: 1px solid #50e3c2; }
 
 .blog_aside {
   -ms-grid-column: 8;
@@ -537,21 +548,23 @@ header.blog {
     grid-row: 1/ span 4; }
     .blog_aside .aside_img_container img {
       width: 100%;
-      height: auto;
-      display: block; }
+      height: 100%;
+      display: block;
+      -o-object-fit: cover;
+      object-fit: cover; }
 
 .aside_text {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-row-span: 3;
-  grid-row: 6/ span 3;
+  grid-row: 5/ span 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2/ span 5; }
 
 .aside_list {
-  -ms-grid-row: 9;
+  -ms-grid-row: 8;
   -ms-grid-row-span: 2;
-  grid-row: 9/ span 2;
+  grid-row: 8/ span 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2/ span 5; }
