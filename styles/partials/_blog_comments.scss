@@ -1,0 +1,32 @@
+.comments_section_wrapper {
+   display: grid;
+   width: 100vw;
+   height: 100vh;
+   border: 20px solid green;
+   position: relative;
+   top: 140vh;
+}
+
+.comments_container {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.comment_box {
+    border: 2px solid pink;
+    width: 100%;
+    display: flex;
+    .comment_img {
+        width: 10%;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    .comment_text {
+        width: 90%;
+    }
+}

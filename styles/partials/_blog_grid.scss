@@ -1,7 +1,8 @@
+
 .grid_wrapper {
     width: 100%;
     position: relative;
-    border: 2px solid red;
+    // border: 2px solid red;
 }
 
 .blog_grid {
@@ -15,8 +16,17 @@
 }
 
 .blog_title {
-    border: 1px solid blue;
+    // border: 1px solid blue;
     grid-column: 2/ span 2;
+    h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 4rem;
+        color: white;
+        line-height: 58px;
+        letter-spacing: 9px;
+        margin-top: 0;
+    }
 }
 
 .blog_img_container {
@@ -33,23 +43,32 @@
 }
 
 .blog_article_container {
-    grid-row: 6/ span 5;
+    grid-row: 6/ span 6;
     grid-column: 1/ span 6;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 30px 30px 30px 70px;
     box-shadow: 10px 10px $boxshadow;
     // border: 5px solid $boxshadow;
     border-right: 1px solid $boxshadow;
     border-top: 1px solid $boxshadow;
+    p:nth-of-type(1) {
+        font-style: italic;
+        color: $btnblue;
+        font-weight:300; 
+    }
+    h2 {
+        color: $spruce;
+    }
 }
 
 .blog_aside {
     grid-column: 8/ span 4;
     grid-row: 4/ span 8;
-    border: 2px solid cornflowerblue;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    h2 {
+        color: $btnblue;
+    }
     .aside_img_container {
         grid-column: 2/ span 4;
         grid-row: 1/ span 4;
@@ -70,4 +89,16 @@
 .aside_list {
     grid-row: 8/ span 2;
     grid-column: 2/ span 5;
+    ul {
+        list-style: none;
+        padding-left: 10px;
+    }
+    li::before {
+        content: "\2022";
+        color: $boxshadow;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 8px;
+    }
 }
