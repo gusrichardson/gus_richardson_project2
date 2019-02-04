@@ -35,23 +35,41 @@
     <main class="contact_main">
         <div class="get_in_touch_container">
             <h2>Get in Touch</h2>
-            <form action="">
+            <form action="" class="contact_form">
                 <label for="name_input" class="visually_hidden">Enter name</label>
-                <input type="text" id="name_input">
+                <input type="text" id="name_input" placeholder="Name">
 
                 <label for="email_input" class="visually_hidden">Enter email</label>
-                <input type="email" id="email_input">
+                <input type="email" id="email_input" placeholder="Email address">
+
+                <textarea name="post_comments" id="comments_area" rows="8">Comment</textarea>
+
+                <input type="button" value="Submit" id="comment_button">
 
             </form>
         </div>
         <aside class="contact_aside">
             <div class="font_awesome_container">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact_text_container">
+                <p>info@email.com</p>
+                <p>123-456-7890</p>
+                <p>123 Queen St. W</p>
+                <p>Unit 10</p>
+                <p>Toronto, ON</p>
+                <p>M5V2D5</p>
 
             </div>
         </aside>
 
-
     </main>
+    <footer>
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
 </body>
 
 </html>

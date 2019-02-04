@@ -1,63 +1,137 @@
 .body_grid {
     display: grid;
     width: 100vw;
-    height: 140vh;
+    height: 120vh;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
-    border: 5px solid red;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 5% 5%; 
 }
 
 .contact_header {
-    background-image: url(../images/contact_banner.jpg);
     grid-column: 1/ span 10;
-    grid-row: 1/ span 3;
-    background-size: contain;
+    grid-row: 1/ span 5;
+    height: auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(../images/contact_banner.jpg);
     z-index: -1;
-}
+    } 
 
 .contact_header_nav_bar {
     width: 100%;
-    border: 2px solid pink;
     display: flex;
 }
 
 .logo_container {
     width: 50%;
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
+    padding-left: 80px;
+    h1 {
+        color: $boxshadow;
+    }
 }
 
 .contact_nav_container {
     width: 50%;
-    border: 2px solid white;
     ul {
         display: flex;
+        padding: 24px 100px 0 100px;
+        justify-content: space-around;
         li {
             display: inline-block;
             text-decoration: none;
             list-style: none;
+            padding: 0 20px;
             a {
                 text-decoration: none;
                 color: white;
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
             }
         }
     }
 }
 
+
 .contact_main {
-    grid-row: 4/ span 4;
+    grid-row: 3/ span 5;
     grid-column: 1/ span 10;
     display: grid;
     grid-template-rows: 10% 10% 20% 20% 20% 20%;
-    grid-template-columns: 5% 5% 10% 10% 20% 20% 20% 5% 5%; 
+    grid-template-columns: 5% 5% 10% 10% 20% 10% 10% 10% 10% 5% 5%; 
 }
 
 .get_in_touch_container {
-    grid-column: 2/ span 4;
-    grid-row: 2/ span 6;
-    background: rgba(255,200,200,0.4);
+    grid-column: 3/ span 4;
+    grid-row: 1/ span 8;
+    // background: rgba(255,200,200,0.4);
 }
 
 .get_in_touch_container h2 {
     color: white;
+    margin-left: 40px;
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact_form {
+    background: white;
+    // padding: 40px;
+    padding: 60px 40px 40px 40px;
+    box-shadow: 10px 10px $boxshadow;
+    input[type="button"] {
+        width: 100%;
+        margin-top: 20px;
+    }
+    input[type="text"] {
+        margin-right: 10px;
+        width: calc(50% - 15px);
+    }
+    input[type="email"] {
+        margin-left: 10px;
+        width: calc(50% - 15px);
+    }
+}
+
+#name_input, #email_input {
+    border: none;
+    border-bottom: 1px solid $boxshadow;
+}
+
+.contact_aside {
+    padding-top: 80px;
+    grid-column: 8/ span 3;
+    grid-row: 5/ span 3;
+    // border: 1px solid red;
+    p {
+        line-height: 10px;
+    }
+    p:nth-of-type(1) {
+        font-weight: bold;
+        line-height: 20px;
+        font-size: 1.2rem;
+    }
+    p:nth-of-type(2) {
+        line-height: 20px;
+    }
+
+}
+
+.font_awesome_container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 180px;
+}
+
+footer {
+    grid-row: 12;
+    grid-column: 1 / span 10;
+    width: 100%;
+    background: $black;
+    text-align: center;
+    p {
+        color: white;
+        line-height: 18px;
+    }
 }
