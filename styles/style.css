@@ -660,10 +660,77 @@ form {
   width: 100%;
   margin: 20px 0 100px 0; }
 
-.test {
-  font-size: 80px; }
-
-.test_header {
-  background-image: url(../images/contact_banner.jpg);
+.body_grid {
+  display: -ms-grid;
+  display: grid;
   width: 100vw;
-  height: 60vh; }
+  height: 140vh;
+  -ms-grid-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  border: 5px solid red; }
+
+.contact_header {
+  background-image: url(../images/contact_banner.jpg);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/ span 10;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/ span 3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1; }
+
+.contact_header_nav_bar {
+  width: 100%;
+  border: 2px solid pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.logo_container {
+  width: 50%;
+  border: 2px solid yellow; }
+
+.contact_nav_container {
+  width: 50%;
+  border: 2px solid white; }
+  .contact_nav_container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .contact_nav_container ul li {
+      display: inline-block;
+      text-decoration: none;
+      list-style: none; }
+      .contact_nav_container ul li a {
+        text-decoration: none;
+        color: white; }
+
+.contact_main {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 4;
+  grid-row: 4/ span 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/ span 10;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 10% 20% 20% 20% 20%;
+  grid-template-rows: 10% 10% 20% 20% 20% 20%;
+  -ms-grid-columns: 5% 5% 10% 10% 20% 20% 20% 5% 5%;
+  grid-template-columns: 5% 5% 10% 10% 20% 20% 20% 5% 5%; }
+
+.get_in_touch_container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/ span 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 6;
+  grid-row: 2/ span 6;
+  background: rgba(255, 200, 200, 0.4); }
+
+.get_in_touch_container h2 {
+  color: white; }

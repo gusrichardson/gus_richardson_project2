@@ -1,9 +1,63 @@
-.test {
-    font-size: 80px;
+.body_grid {
+    display: grid;
+    width: 100vw;
+    height: 140vh;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    border: 5px solid red;
 }
 
-.test_header {
+.contact_header {
     background-image: url(../images/contact_banner.jpg);
-    width: 100vw;
-    height: 60vh;
+    grid-column: 1/ span 10;
+    grid-row: 1/ span 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.contact_header_nav_bar {
+    width: 100%;
+    border: 2px solid pink;
+    display: flex;
+}
+
+.logo_container {
+    width: 50%;
+    border: 2px solid yellow;
+}
+
+.contact_nav_container {
+    width: 50%;
+    border: 2px solid white;
+    ul {
+        display: flex;
+        li {
+            display: inline-block;
+            text-decoration: none;
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.contact_main {
+    grid-row: 4/ span 4;
+    grid-column: 1/ span 10;
+    display: grid;
+    grid-template-rows: 10% 10% 20% 20% 20% 20%;
+    grid-template-columns: 5% 5% 10% 10% 20% 20% 20% 5% 5%; 
+}
+
+.get_in_touch_container {
+    grid-column: 2/ span 4;
+    grid-row: 2/ span 6;
+    background: rgba(255,200,200,0.4);
+}
+
+.get_in_touch_container h2 {
+    color: white;
 }
