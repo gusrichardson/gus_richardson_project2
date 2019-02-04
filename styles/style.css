@@ -680,8 +680,7 @@ form {
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/contact_banner.jpg);
-  z-index: -1; }
+  background-image: url(../images/contact_banner.jpg); }
 
 .contact_header_nav_bar {
   width: 100%;
@@ -705,7 +704,7 @@ form {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
     .contact_nav_container ul li {
-      display: inline-block;
+      display: block;
       text-decoration: none;
       list-style: none;
       padding: 0 20px; }
@@ -714,7 +713,11 @@ form {
         color: white;
         font-family: 'Lato', sans-serif;
         font-weight: 700;
-        font-size: 20px; }
+        font-size: 20px;
+        text-transform: uppercase; }
+
+.contact_nav_container li a:hover {
+  color: #50e3c2; }
 
 .contact_main {
   -ms-grid-row: 3;
@@ -725,6 +728,7 @@ form {
   grid-column: 1/ span 10;
   display: -ms-grid;
   display: grid;
+  position: relative;
   -ms-grid-rows: 10% 10% 20% 20% 20% 20%;
   grid-template-rows: 10% 10% 20% 20% 20% 20%;
   -ms-grid-columns: 5% 5% 10% 10% 20% 10% 10% 10% 10% 5% 5%;
@@ -789,6 +793,8 @@ form {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-right: 180px; }
+  .font_awesome_container i:hover {
+    color: #50e3c2; }
 
 footer {
   -ms-grid-row: 12;
