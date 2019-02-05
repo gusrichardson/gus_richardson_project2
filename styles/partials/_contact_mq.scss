@@ -1,4 +1,23 @@
+@media only screen and (max-width: 1150px) {
+    .font_awesome_container {
+        padding-right: 80px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
+
+    .contact_header_nav_bar {
+        background: rgba(6, 57, 116, 0.9);
+        height: 80px;
+        position: fixed;
+        z-index: 20;
+        .logo_container {
+            padding-left: 40px;
+            h1 {
+                margin-top: 10px;
+             }
+        }
+    }
   
     .contact_main {
         grid-row: 3;
@@ -19,8 +38,8 @@
         color: white;
         font-size: 1.5rem;
         position: absolute;
-        right: 70px;
-        top: 43px;
+        right: 50px;
+        top: 26px;
     }
 
     .get_in_touch_container {
@@ -39,7 +58,6 @@
 
     .contact_form {
         padding: 40px;
-        color: red;
         width: 80%;
         margin: 0 auto;
     }
@@ -61,4 +79,43 @@
     .font_awesome_container {
         padding: 10px 100px 0;
     }
-}   
+    footer {
+        display: block;
+        margin-top: 50px;
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+
+    .fa_burger_bars {
+        top: 20px;
+        right: 30px;
+        font-size: 1.3rem;
+    }
+
+    #name_input, #email_input {
+        width: 100%;
+        margin: 5px 0 0;
+    }
+
+    .font_awesome_container {
+        padding: 10px 50px 0;
+    }
+
+    .contact_header_nav_bar {
+        height: 60px;
+    }
+
+    .contact_form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .logo_container {
+        padding-left: 30px;
+        h1 {
+             font-size: 1.5rem;
+             margin-top: 10px;
+        }
+    }
+}
