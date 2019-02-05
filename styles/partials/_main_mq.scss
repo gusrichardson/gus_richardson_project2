@@ -138,3 +138,44 @@
    }
 
 }
+
+@media only screen and (max-width: 700px) {
+    .welcome_container .welcome_text {
+        width: 90%;
+        h2 {
+            font-size: 2rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        height: 70vh;
+    }
+
+    .welcome_container {
+        height: 65%;
+    }
+
+    .visit_guyana {
+        .guyana_img_box {
+            display: none;
+        }
+        .guyana_text_box {
+            width: 100%;
+        }
+    }
+
+    .gallery {
+        .img2 {
+            display: none;
+        }
+        .gallery_img_box {
+            width: 48%;
+        }
+    }
+}
