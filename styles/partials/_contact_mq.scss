@@ -1,0 +1,64 @@
+@media only screen and (max-width: 800px) {
+  
+    .contact_main {
+        grid-row: 3;
+        display: block;
+        // grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    }
+
+    .contact_ul li a {
+        display: none;
+    }
+
+    .contact_nav_container {
+        position: relative;
+    }
+
+    .fa_burger_bars {
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 70px;
+        top: 43px;
+    }
+
+    .get_in_touch_container {
+        grid-column: 2/ span 6;
+        grid-row: 1/ span 1;
+        padding: 0;
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 10px;
+            // margin-top: 0;
+
+        }
+    }
+
+
+    .contact_form {
+        padding: 40px;
+        color: red;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #comments_area {
+        display: none;
+    }
+
+    #mobile_comments {
+        display: block;
+    }
+    .contact_aside {
+        width: 80%;
+        text-align: center;
+        padding-top: 40px;
+        margin: 0 auto;
+        // border: 1px solid red;
+    }
+    .font_awesome_container {
+        padding: 10px 100px 0;
+    }
+}   

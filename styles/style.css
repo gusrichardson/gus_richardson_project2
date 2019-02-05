@@ -719,6 +719,9 @@ form {
 .contact_nav_container li a:hover {
   color: #50e3c2; }
 
+.fa_burger_bars {
+  display: none; }
+
 .contact_main {
   -ms-grid-row: 3;
   -ms-grid-row-span: 5;
@@ -764,6 +767,9 @@ form {
     margin-left: 10px;
     width: calc(50% - 15px); }
 
+#mobile_comments {
+  display: none; }
+
 #name_input, #email_input {
   border: none;
   border-bottom: 1px solid #50e3c2; }
@@ -804,7 +810,53 @@ footer {
   grid-column: 1 / span 10;
   width: 100%;
   background: #2c2c2c;
-  text-align: center; }
+  text-align: center;
+  z-index: -1; }
   footer p {
     color: white;
     line-height: 18px; }
+
+@media only screen and (max-width: 800px) {
+  .contact_main {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    display: block; }
+  .contact_ul li a {
+    display: none; }
+  .contact_nav_container {
+    position: relative; }
+  .fa_burger_bars {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 70px;
+    top: 43px; }
+  .get_in_touch_container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/ span 6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/ span 1;
+    padding: 0; }
+    .get_in_touch_container h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 10px; }
+  .contact_form {
+    padding: 40px;
+    color: red;
+    width: 80%;
+    margin: 0 auto; }
+  #comments_area {
+    display: none; }
+  #mobile_comments {
+    display: block; }
+  .contact_aside {
+    width: 80%;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 auto; }
+  .font_awesome_container {
+    padding: 10px 100px 0; } }
