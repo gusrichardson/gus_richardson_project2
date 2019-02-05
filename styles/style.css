@@ -719,7 +719,7 @@ form {
 .contact_nav_container li a:hover {
   color: #50e3c2; }
 
-.fa_burger_bars {
+.burger, .burger_checkbox {
   display: none; }
 
 .contact_main {
@@ -822,29 +822,47 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .contact_header_nav_bar {
-    background: rgba(6, 57, 116, 0.9);
-    height: 80px;
+    background: #063974;
+    border-bottom: 2px solid #50e3c2;
+    height: 70px;
     position: fixed;
     z-index: 20; }
     .contact_header_nav_bar .logo_container {
-      padding-left: 40px; }
+      padding-left: 60px; }
       .contact_header_nav_bar .logo_container h1 {
-        margin-top: 10px; }
+        margin-top: 7px;
+        margin-left: 0; }
   .contact_main {
     -ms-grid-row: 3;
     grid-row: 3;
     display: block; }
-  .contact_ul li a {
+  nav {
     display: none; }
+  #toggle_nav:checked + nav {
+    display: block;
+    background: rgba(6, 57, 116, 0.8);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 140px;
+    text-align: center;
+    width: 200%;
+    border-bottom: 2px solid #50e3c2; }
+    #toggle_nav:checked + nav ul {
+      padding: 0; }
   .contact_nav_container {
     position: relative; }
-  .fa_burger_bars {
+  .burger {
     display: block;
     color: white;
     font-size: 1.5rem;
     position: absolute;
-    right: 50px;
-    top: 26px; }
+    right: 60px;
+    top: 22px; }
+  .burger:hover {
+    color: #d2f9f1; }
+  .burger:active {
+    color: #50e3c2; }
   .get_in_touch_container {
     -ms-grid-column: 2;
     -ms-grid-column-span: 6;
@@ -877,9 +895,13 @@ footer {
     margin-top: 50px; } }
 
 @media only screen and (max-width: 500px) {
-  .fa_burger_bars {
-    top: 20px;
-    right: 30px;
+  #toggle_nav:checked + nav {
+    top: 60px; }
+    #toggle_nav:checked + nav li {
+      padding: 0; }
+  .burger {
+    top: 17px;
+    right: 20px;
     font-size: 1.3rem; }
   #name_input, #email_input {
     width: 100%;
@@ -887,12 +909,17 @@ footer {
   .font_awesome_container {
     padding: 10px 50px 0; }
   .contact_header_nav_bar {
-    height: 60px; }
+    height: 60px;
+    padding-left: 0;
+    margin-left: 0; }
+    .contact_header_nav_bar .logo_container {
+      padding-left: 20px; }
   .contact_form {
     width: 90%;
     padding: 20px; }
-  .logo_container {
-    padding-left: 30px; }
-    .logo_container h1 {
-      font-size: 1.5rem;
-      margin-top: 10px; } }
+  .logo_container h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 0; }
+  .get_in_touch_container h2 {
+    text-align: left; } }

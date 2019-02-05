@@ -22,7 +22,6 @@
 
 .logo_container {
     width: 50%;
-    // border: 2px solid yellow;
     padding-left: 80px;
     h1 {
         color: $boxshadow;
@@ -56,8 +55,12 @@
     color: $boxshadow;
 }
 
-.fa_burger_bars {
+.burger, .burger_checkbox {
     display: none;
+}
+
+#toggle_nav {
+    // display: none;
 }
 
 .contact_main {
