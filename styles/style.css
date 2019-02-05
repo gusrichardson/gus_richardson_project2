@@ -257,11 +257,12 @@ h1 {
   .visit_guyana h2 {
     color: #0c5f4c;
     font-family: 'Lato', sans-serif;
-    letter-spacing: 3.8px; }
+    letter-spacing: 3.8px;
+    margin-top: 0; }
 
 .guyana_text_box {
   width: 60%;
-  padding-right: 10px; }
+  padding-right: 25px; }
 
 .guyana_img_box {
   height: 100%;
@@ -269,6 +270,7 @@ h1 {
   -webkit-box-shadow: -20px 20px #50e3c2;
   box-shadow: -20px 20px #50e3c2; }
   .guyana_img_box img {
+    min-width: 100%;
     display: block; }
 
 .gallery {
@@ -383,8 +385,8 @@ h1 {
   .item_one .css_grid_img_container {
     width: 100%;
     height: auto;
-    -webkit-box-shadow: 10px 10px #50e3c2;
-    box-shadow: 10px 10px #50e3c2; }
+    -webkit-box-shadow: 20px 20px #50e3c2;
+    box-shadow: 20px 20px #50e3c2; }
     .item_one .css_grid_img_container img {
       width: 100%;
       height: 100%;
@@ -400,8 +402,8 @@ h1 {
   .item_four .css_grid_img_container {
     width: 100%;
     height: auto;
-    -webkit-box-shadow: -10px 10px #50e3c2;
-    box-shadow: -10px 10px #50e3c2; }
+    -webkit-box-shadow: -20px 20px #50e3c2;
+    box-shadow: -20px 20px #50e3c2; }
     .item_four .css_grid_img_container img {
       max-width: 100%;
       height: 100%;
@@ -966,7 +968,63 @@ footer {
     background-image: url(../../images/footer_banner.jpg); } }
 
 @media only screen and (max-width: 900px) {
+  .welcome_container .welcome_text {
+    width: 70%; }
   .nav_wrapper {
     display: block; }
   .nav_item {
-    width: 100%; } }
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 20px; }
+  .nav_item:nth-child(odd) {
+    -webkit-box-shadow: 5px 0 #50e3c2;
+    box-shadow: 5px 0 #50e3c2; }
+  .nav_item:nth-child(even) {
+    -webkit-box-shadow: -5px 0 #50e3c2;
+    box-shadow: -5px 0 #50e3c2; } }
+
+@media only screen and (max-width: 800px) {
+  .header_nav_bar {
+    background: #063974;
+    border-bottom: 2px solid #50e3c2;
+    height: 80px;
+    position: fixed;
+    z-index: 20; }
+    .header_nav_bar #header_burger {
+      top: 26px; }
+    .header_nav_bar h1 {
+      margin-top: 12px; }
+  .header_nav {
+    margin-top: 30px; }
+  #toggle_nav:checked + nav#drop_nav {
+    top: 80px;
+    width: 100%;
+    height: 80px; }
+  .visit_guyana {
+    padding: 80px 40px 60px 40px; }
+    .visit_guyana .guyana_text_box {
+      width: 70%; }
+    .visit_guyana .guyana_img_box {
+      height: 100%;
+      width: 30%;
+      -webkit-box-shadow: -10px 10px #50e3c2;
+      box-shadow: -10px 10px #50e3c2; }
+      .visit_guyana .guyana_img_box img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        -o-object-fit: cover;
+        object-fit: cover; }
+  .gallery {
+    padding: 60px 40px; }
+  .centre_nav_section {
+    padding: 60px 40px; }
+  .css_grid {
+    padding: 0 40px; }
+  .css_grid_item {
+    width: 100%;
+    margin: 30px auto; }
+  #footer_background_invisible_desktop {
+    height: 300px; }
+  .footer_offer {
+    padding: 40px; } }
