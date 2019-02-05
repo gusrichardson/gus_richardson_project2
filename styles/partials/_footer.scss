@@ -1,5 +1,6 @@
-footer {
+.main_footer {
     padding-bottom: 0;
+    background-color: white;
 }
 
 .footer_offer {
@@ -9,6 +10,9 @@ footer {
         font-family: 'Lato', sans-serif;
         color: $spruce;
         letter-spacing: 3.8px;
+    }
+    p {
+        color: $black;
     }
 }
 
