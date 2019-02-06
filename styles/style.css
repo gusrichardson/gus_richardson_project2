@@ -1000,6 +1000,8 @@ footer {
     top: 80px;
     width: 100%;
     height: 80px; }
+  .welcome_container {
+    height: 65%; }
   .visit_guyana {
     padding: 80px 40px 60px 40px; }
     .visit_guyana .guyana_text_box {
@@ -1035,11 +1037,19 @@ footer {
     .welcome_container .welcome_text h2 {
       font-size: 2rem; }
     .welcome_container .welcome_text h1 {
-      font-size: 3.5rem; } }
+      font-size: 3.5rem; }
+  #invisible_desktop {
+    margin-bottom: 0; } }
 
 @media only screen and (max-width: 600px) {
   header {
     height: 70vh; }
+  .welcome_container .welcome_text {
+    text-align: center; }
+    .welcome_container .welcome_text h2 {
+      font-size: 1.5rem; }
+    .welcome_container .welcome_text h1 {
+      font-size: 2.5rem; }
   .welcome_container {
     height: 65%; }
   .visit_guyana .guyana_img_box {
@@ -1050,3 +1060,53 @@ footer {
     display: none; }
   .gallery .gallery_img_box {
     width: 48%; } }
+
+@media only screen and (max-width: 500px) {
+  .nav_item {
+    padding: 0 20px; }
+    .nav_item .fa_container {
+      display: none; }
+    .nav_item .nav_text {
+      width: 100%; } }
+
+@media only screen and (max-width: 400px) {
+  header {
+    height: 60vh; }
+  .header_nav_bar {
+    height: 54px; }
+    .header_nav_bar #header_burger {
+      top: 16px; }
+  .header_nav_bar .logo {
+    padding-left: 15px; }
+    .header_nav_bar .logo h1 {
+      margin-top: 10px;
+      font-size: 1.2rem; }
+  #toggle_nav:checked + nav#drop_nav {
+    top: 54px;
+    width: 100%;
+    height: 60px; }
+  .header_nav {
+    margin-top: 18px; }
+    .header_nav a {
+      font-size: .9rem; }
+  .welcome_container .welcome_text h2 {
+    font-size: 1.3rem; }
+  .welcome_container .welcome_text h1 {
+    font-size: 2rem; }
+  .item_two, #invisible_desktop {
+    padding: 20px 20px; }
+  .nav_item:nth-child(odd), .nav_item:nth-child(even) {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center; }
+  .visit_guyana {
+    padding: 60px 20px 20px 20px;
+    text-align: center; }
+  .gallery {
+    padding: 20px 10px; }
+  .centre_nav_section {
+    padding: 20px 10px; }
+  .css_grid {
+    padding: 0 10px; }
+  #footer_background_invisible_desktop {
+    height: 240px; } }
