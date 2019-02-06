@@ -22,11 +22,6 @@
         height: 80vh;
     }
 
-    // .grid_wrapper {
-    //     padding: 40px;
-    //     width: 100%;
-    // }
-
     .blog_grid {
         width: 100vw;
         height: 180vh;
@@ -49,8 +44,6 @@
     }
 
     .blog_article_container {
-        grid-column: 1/ span 10;
-        grid-row: 4/ span 5;
         margin-right: 20px;
         border: none;
     }
@@ -79,9 +72,10 @@
     }
 
     .comments_section_wrapper {
+        margin-top: 50px;
         display: block;
         width: 100vw;
-        height: 30vh;
+        height: 40vh;
         position: relative;
         top: -200px;
     }
@@ -105,6 +99,7 @@
         .aside_text, .aside_list {
             width: 100%;
             text-align: left;
+            margin-left: 20px;
         }
     }
 
@@ -127,11 +122,13 @@
 @media only screen and (max-width: 500px){
     .blog_article_container {
         box-shadow: none;
+        margin: 0 10px;
     }
 
     .comments_section_wrapper {
         position: relative;
-        top: 100px;
+        // top: 100px;
+        top: 10vh;
         height: 350px;
     }
 
@@ -150,35 +147,49 @@
             width: 100%;
         }
     }
+
+    #comment_form{
+        #email, #name {
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+    
 }
 
 @media only screen and (max-width: 470px){
     .comments_section_wrapper {
-        top: 250px;
+        top: 40vh;
     }
 }
 
 @media only screen and (max-width: 420px){
     .comments_section_wrapper {
-        top: 350px;
+        top: 50vh;
     }
 }
 
 
 @media only screen and (max-width: 400px){
     .comments_section_wrapper {
-        top: 450px;
+        top: 60vh;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .comments_section_wrapper {
+        top: 75vh;
     }
 }
 
 @media only screen and (max-width: 360px){
     .comments_section_wrapper {
-        top: 550px;
+        top: 80vh;
     }
 }
 
 @media only screen and (max-width: 340px){
     .comments_section_wrapper {
-        top: 750px;
+        top: 100vh;
     }
 }

@@ -1143,12 +1143,6 @@ footer {
     margin-left: 40px;
     margin-top: 0; }
   .blog_article_container {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 10;
-    grid-column: 1/ span 10;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 5;
-    grid-row: 4/ span 5;
     margin-right: 20px;
     border: none; }
   .blog_aside {
@@ -1171,9 +1165,10 @@ footer {
     text-align: right;
     margin-right: 40px; }
   .comments_section_wrapper {
+    margin-top: 50px;
     display: block;
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     position: relative;
     top: -200px; }
   .comments_container {
@@ -1191,7 +1186,8 @@ footer {
     justify-content: space-between; }
     .blog_aside .aside_text, .blog_aside .aside_list {
       width: 100%;
-      text-align: left; }
+      text-align: left;
+      margin-left: 20px; }
   .comments_section_wrapper {
     display: block;
     width: 100vw;
@@ -1206,10 +1202,11 @@ footer {
 @media only screen and (max-width: 500px) {
   .blog_article_container {
     -webkit-box-shadow: none;
-    box-shadow: none; }
+    box-shadow: none;
+    margin: 0 10px; }
   .comments_section_wrapper {
     position: relative;
-    top: 100px;
+    top: 10vh;
     height: 350px; }
   .comments_title_container {
     text-align: center; }
@@ -1223,24 +1220,31 @@ footer {
       margin: 0 auto; }
     .comment_box .comment_text {
       text-align: center;
-      width: 100%; } }
+      width: 100%; }
+  #comment_form #email, #comment_form #name {
+    width: 100%;
+    margin: 5px 0; } }
 
 @media only screen and (max-width: 470px) {
   .comments_section_wrapper {
-    top: 250px; } }
+    top: 40vh; } }
 
 @media only screen and (max-width: 420px) {
   .comments_section_wrapper {
-    top: 350px; } }
+    top: 50vh; } }
 
 @media only screen and (max-width: 400px) {
   .comments_section_wrapper {
-    top: 450px; } }
+    top: 60vh; } }
+
+@media only screen and (max-width: 380px) {
+  .comments_section_wrapper {
+    top: 75vh; } }
 
 @media only screen and (max-width: 360px) {
   .comments_section_wrapper {
-    top: 550px; } }
+    top: 80vh; } }
 
 @media only screen and (max-width: 340px) {
   .comments_section_wrapper {
-    top: 750px; } }
+    top: 100vh; } }

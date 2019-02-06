@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- HEADER STARTS -->
     <header class="blog">
         <div class="header_nav_bar">
             <div class="logo">
@@ -24,18 +25,23 @@
                 <input type="checkbox" id="toggle_nav" class="burger_checkbox">
                 <nav id="drop_nav">
                     <ul class="header_nav">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <!-- END OF HEADER     -->
+
+    <!-- START OF MAIN GRID SECTION/ ARTICLE AND ASIDE -->
     <main>
         <div class="grid_wrapper">
             <div class="blog_grid">
+
+                <!-- BLOG ARTICLE -->
                 <div class="blog_title">
                     <h2>Blog</h2>
                 </div>
@@ -57,6 +63,9 @@
                         ullam nulla numquam modi neque accusamus, pariatur deleniti tenetur quisquam soluta omnis
                         necessitatibus delectus consequatur?</p>
                 </div>
+                <!-- BLOG ARTICLE ENDS -->
+
+                <!-- ASIDE SECTION STARTS -->
                 <aside class="blog_aside">
                     <div class="aside_img_container">
                         <img src="images/aside_image.jpg" alt="two cabins on stilts with boardwalks leading to the ocean">
@@ -78,8 +87,9 @@
                 </aside>
             </div>
         </div>
+        <!-- ASIDE SECTION ENDS -->
 
-        <!-- COMMENTS SECTION -->
+        <!-- COMMENTS SECTION STARTS -->
         <div class="comments_section_wrapper">
             <div class="comments_container">
                 <div class="comments_title_container">
@@ -104,7 +114,8 @@
                             libero ea, iure perferendis veritatis impedit molestiae iusto.</p>
                     </div>
                 </div>
-                <form action="#">
+                <!-- COMMENTS FORM  -->
+                <form action="#" id="comment_form">
                     <label for="name" class="visually_hidden">Name</label>
                     <input type="text" id="name" placeholder="Name">
 
@@ -116,6 +127,9 @@
                     <input type="button" value="Post comment" id="post_comment_button">
                 </form>
             </div>
+            <!-- COMMENTS SECTION ENDS -->
+
+            <!-- COPYRIGHT BAR  -->
             <div class="copyright_bar">
                 <p>Copyright © 2019 HackerYou</p>
             </div>
