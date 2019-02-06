@@ -1,3 +1,5 @@
+// BLOG PAGE - COMMENTS SECTION
+
 .visually_hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
@@ -15,10 +17,8 @@
    display: grid;
    width: 100vw;
    height: 100vh;
-//    border: 10px solid cornflowerblue;
    position: relative;
    top: 140vh;
-//    padding-left: 60px;
    input[type="text"], input[type="email"] {
        border: none;
        border-bottom: 2px solid $boxshadow;
@@ -34,15 +34,12 @@
     display: flex;
     width: 60%;
     flex-direction: column;
-    // border: 1px solid blue;
 }
 
 .comment_box {
-    // border: 2px solid pink;
     width: 100%;
     display: flex;
     .comment_img {
-        // border: 1px solid purple;
         padding-top: 26px;
         width: 10%;
         img {

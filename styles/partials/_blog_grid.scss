@@ -1,8 +1,8 @@
+// BLOG PAGE - GRID SECTION CONTAINING ARTICLE AND ASIDE
 
 .grid_wrapper {
     width: 100%;
     position: relative;
-    // border: 2px solid red;
 }
 
 .blog_grid {
@@ -16,7 +16,6 @@
 }
 
 .blog_title {
-    // border: 1px solid blue;
     grid-column: 2/ span 2;
     h2 {
         font-family: 'Lato', sans-serif;
@@ -47,7 +46,6 @@
     grid-column: 1/ span 6;
     padding: 30px 30px 30px 70px;
     box-shadow: 10px 10px $boxshadow;
-    // border: 5px solid $boxshadow;
     border-right: 1px solid $boxshadow;
     border-top: 1px solid $boxshadow;
     p:nth-of-type(1) {

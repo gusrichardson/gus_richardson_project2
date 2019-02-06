@@ -1,3 +1,5 @@
+// CONTACT PAGE MEDIA QUERIES
+
 @media only screen and (max-width: 1150px) {
     .font_awesome_container {
         padding-right: 80px;
@@ -10,7 +12,6 @@
         background: rgba(6, 57, 116, 1);
         border-bottom: 2px solid $boxshadow;
         height: 70px;
-        // height: 80px;
         position: fixed;
         z-index: 20;
         .logo_container {
@@ -25,7 +26,6 @@
     .contact_main {
         grid-row: 3;
         display: block;
-        // grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     }
 
     nav {
@@ -41,7 +41,6 @@
       width: 140px;
       text-align: center;
       width: 200%;
-    //   border-top: 2px solid $boxshadow;
       border-bottom: 2px solid $boxshadow;
       ul {
           padding: 0;
@@ -79,8 +78,6 @@
             font-size: 2rem;
             text-align: center;
             margin-bottom: 10px;
-            // margin-top: 0;
-
         }
     }
 
@@ -103,7 +100,6 @@
         text-align: center;
         padding-top: 40px;
         margin: 0 auto;
-        // border: 1px solid red;
     }
     .font_awesome_container {
         padding: 10px 100px 0;
